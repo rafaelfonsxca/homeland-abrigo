@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homeland - Abrigo de Animais</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c9e460f906.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/logo.png" class="logo" alt="Logo Homeland - Abrigo de animais">
+            </a>
+            <button class="navbar-toggler hidden-sm-up" data-toggle="collapse" data-target="#nav-target">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav-target">
+                <ul class="navbar-nav">
+                    <li class="nav-items"><a class="nav-link" href="index.html">INÍCIO</a></li>
+                    <li class="nav-items"><a class="nav-link" href="about.html">O ABRIGO</a></li>
+                    <li class="nav-items"><a class="nav-link" href="help.html">COMO AJUDAR?</a></li>
+                    <li class="nav-items"><a class="nav-link" href="adoption.html">ADOÇÃO</a></li>
+                    <li class="nav-items"><a class="nav-link" href="contact.html">CONTATO</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="mainSlider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+                <li data-target="#mainSlider" data-slide-to="1"></li>
+                <li data-target="#mainSlider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/banner1.png" class="d-block w-100" alt="Não compre. Adote.">
+                    <div class="carousel-caption d-nome dmd-block adopt">
+                        <h2>Não compre. Adote.</h2>
+                        <a href="adoption.html" class="main-btn">Clique aqui!</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner2.png" class="d-block w-100" alt="Faça uma doação. Clique aqui.">
+                    <div class="carousel-caption d-nome dmd-block donate">
+                        <h2>Faça uma doação.</h2>
+                        <a href="help.html" class="main-btn">Clique aqui!</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner3.png" class="d-block w-100" alt="Seja voluntário. Clique aqui">
+                    <div class="carousel-caption d-nome dmd-block volunteer">
+                        <h2>Seja voluntário.</h2>
+                        <a href="contact.html" class="main-btn">Clique aqui!</a>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#mainSlider" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </main>
+    <div id="conteudo-adocao">
+        <h2>Adoção</h2>
+        <p>*Leia atentamente as informações abaixo antes de preencher o formulário:</p>
+        <ul>
+            <li>Tenha certeza da decisão que está tomando.</li>
+            <li>Aceitamos devoluções mas pode ser traumatico para o animal.</li>
+            <li>Organize o ambiente que o animal irá ficar.</li>
+            <li>Busque informações sobre a adoção.</li>
+        </ul>
+        <h4>Ficamos muito felizes por você ter tomado essa decisão.</h4>
+        <p>(Após o preenchimento, aguarde que entraremos em contato dentro de 24hrs.)</p>
+    </div>
+    <div class="formulario-1">
+        <form name="formNome" id="formNome">
+            <fieldset id="dadospessoais">
+                <legend>Dados Pessoais</legend>
+                <label>Nome Completo:</label>
+                <input type="text" id="nome" size="15" max-width="30" class="form-control-sm">
+                <br />
+                <label>Data de nascimento:</label>
+                <input type="text" name="dtnasc" placeholder="DD/MM/AAAA" size="6" class="form-control-sm">
+                <br />
+                <label>E-mail:</label>
+                <input type="text" id="email" name="email" placeholder="exemplo@exemplo.com.br" size="15" class="form-control-sm">
+                <br />
+                <label>Telefone:</label>
+                <input type="text" name="tel" id="tel" placeholder="(DD)9999-9999" size="7" class="form-control-sm">
+                <br />
+                <label>Whatsapp:</label>
+                <input type="text" name="cel" id="cel" placeholder="(DD)99999-9999" size="7" class="form-control-sm">
+                <br />
+                <label>Sexo:
+                    <label><input type="radio" name="sexo" value="M" />Masculino</label>
+                    <label><input type="radio" name="sexo" value="M" />Feminino</label>
+                    <label><input type="radio" name="sexo" value="M" />Prefiro não dizer</label>
+                </label>
+            </fieldset>
+            <fieldset id="endereco">
+                <legend>Endereço:</legend>
+                <label>Rua/Avenida:</label>
+                <input type="text" name="rua" id="rua" class="form-control-sm">
+                <br />
+                <label>Número:</label>
+                <input type="text" name="num" id="num" class="form-control-sm">
+                <br />
+                <label id="compl">Complemento
+                    <input type="text" name="compl" id="compl" class="form-control-sm">
+                </label>
+                <br />
+                <label>Cidade:
+                    <input type="text" name="cidade" id="cidade" class="form-control-sm">
+                </label>
+                <label>UF:
+                    <select id="uf" name="uf" class="form-control-sm">
+                        <option value=""></option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="ES">Espirito Santo</option>
+                    </select>
+                </label>
+                <br />
+                <label>CEP:
+                    <input type="text" id="cep" name="cep" placeholder="99.999-999" class="form-control-sm">
+                </label>
+            </fieldset>
+        </form>
+    </div>
+    <div class="formulario-2">
+        <form>
+            <fieldset id="info">
+                <legend>Informações técnicas:</legend>
+                <label>Quero adotar:
+                    <label><input type="radio" name="tipo" value="M" />Cachorro</label>
+                    <label><input type="radio" name="tipo" value="M" />Gato</label>
+                </label>
+                <br />
+                <label>Porte:
+                    <label><input type="radio" name="porte" value="M" />Pequeno</label>
+                    <label><input type="radio" name="porte" value="M" />Médio</label>
+                    <label><input type="radio" name="porte" value="M" />Grande</label>
+                    <label><input type="radio" name="porte" value="M" />Não tenho preferência</label>
+                </label>
+                <br />
+                <label>Moro em:
+                    <select id="local" class="form-control-sm">
+                        <option value=""></option>
+                        <option value="casa">Casa</option>
+                        <option value="apartamento">Apartamento</option>
+                    </select>
+                </label>
+                <br />
+                <label>Possuo quintal:
+                    <label><input type="radio" name="quintal" value="M" />Sim</label>
+                    <label><input type="radio" name="quintal" value="M" />Não</label>
+                </label>
+                <br />
+                <label>Tenho outros animais na minha residência:
+                    <label><input type="radio" name="quintal" value="M" />Sim</label>
+                    <label><input type="radio" name="quintal" value="M" />Não</label>
+                </label>
+            </fieldset>
+            <fieldset id="coments">
+                <legend>Comentários adicionais:</legend>
+                <textarea id="obs" name="obs" rows="5" col="30" class="form-control-sm"></textarea>
+            </fieldset>
+        </form>
+    </div>
+    <form>
+        <div class="button">
+            <button type="submit" id="btnenviar">Enviar</button>
+            <button type="button" id="btnlimpar">Limpar</button>
+        </div>
+    </form>
+    <footer id="rodape">
+        <div>
+            <a href="index.html">
+                <img src="img/logo.png" class="rodape-logo" alt="Logo Homeland - Abrigo de Animais">
+            </a>
+        </div>
+        <div class="redes-sociais">
+            <a href="#" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </footer>
+    <p class="copyright">Todos os direitos reservados &copy; 2020.</p>
+</body>
+
+</html>
